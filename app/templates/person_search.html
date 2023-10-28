@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>検索用htmlファイル</title>
+    </head>
+    <body>
+        <form action="http://127.0.0.1:5000/person_result">
+            <h1 style="text-align: center;">検索条件</h1>
+            <table border="1" style="margin: 0 auto 10px auto;">
+                <input type="num" name="search_size" value="1">
+                <tr>
+                    <th>height</th>
+                    <td><input type="number" value="" name="height"></td>
+                    <td>
+                        <select name="height_high_low">
+                            <option value="high">以上</option>
+                            <option value="low">以下</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>weight</th>
+                    <td><input type="number" value="" name="weight"></td>
+                    <td>
+                        <select name="weight_high_low">
+                            <option value="high">以上</option>
+                            <option value="low">以下</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+            <table border="1" style="margin: 0 auto 10px auto;">
+                <tr>
+                    <th>条件の組み合わせ</th>
+                    <td>
+                        <select name="and_or">
+                            <option value="or">or</option>
+                            <option value="and">and</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+            <div style="width: 100%; text-align: center;">
+                <input type="submit" value="検索" style="margin: 0 auto;">
+            </div>
+        </form>
+
+    </body>
+</html>
